@@ -1,0 +1,10 @@
+driver-class-name: org.postgresql.Driver
+url: jdbc:postgresql://docker.for.mac.localhost:5432/aston_simple_app_db
+username: postgres
+password: postgres
+
+liquibase:
+  change-log: classpath:liquibase/db.changelog-master.xml
+  url: jdbc:postgresql://docker.for.mac.localhost:5432/aston_simple_app_db
+  user: postgres
+  password: postgres
